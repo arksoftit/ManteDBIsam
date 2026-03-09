@@ -8,7 +8,7 @@ Herramienta de mantenimiento para bases de datos DBISam vía ODBC (32 bits)
 
 ## Descripción
 
-ManteDBIsam es una aplicación gráfica desarrollada en Python que permite realizar tareas de mantenimiento sobre bases de datos DBISam a través de conectores ODBC de 32 bits. Está especialmente diseñada para trabajar con los sistemas administrativos de a2Softway, ofreciendo una interfaz amigable para operaciones de verificación, reparación y optimización de tablas.
+ManteDBIsam es una aplicación gráfica desarrollada en Python que permite realizar tareas de mantenimiento sobre bases de datos DBISam a través de conectores ODBC de 32 bits. Está especialmente diseñada para trabajar con aplicaciones que utilicen DBIsam como motor de su nase de datos,  ofreciendo una interfaz amigable para operaciones de verificación, reparación y optimización de tablas.
 
 ## Objetivo de la aplicación
 
@@ -17,7 +17,6 @@ Proporcionar a los administradores de sistemas y técnicos de soporte una herram
 - Verificar la integridad estructural de tablas DBISam
 - Reparar tablas que presenten corrupción o errores
 - Optimizar tablas para mejorar el rendimiento
-- Validar licencias y archivos de configuración de sistemas a2
 - Mantener un historial de operaciones mediante logs detallados
 
 ## Características principales
@@ -28,7 +27,6 @@ Proporcionar a los administradores de sistemas y técnicos de soporte una herram
 - **Barra de progreso**: Visualización del avance de operaciones
 - **Logs automáticos**: Generación de archivos de registro en carpeta `logs`
 - **Gestión de respaldos**: Movimiento automático de archivos .dbk, .ibk y .bbk a `backupsdata`
-- **Validación de licencia**: Verificación de archivos a2admin.A2 y empresas.dat
 - **Interfaz por pestañas**: Separación entre listado de tablas y resultados
 - **Información detallada**: Estado de conexión y detalles técnicos
 
@@ -71,14 +69,9 @@ python ManteDBIsam.py
 
 ### Conexión a base de datos
 1. Ingresar nombre del DSN configurado
-2. Usuario y contraseña (usualmente "master" para DBISam)
+2. Usuario y contraseña 
 3. Hacer clic en "Conectar"
 4. Verificar la ruta de conexión mostrada
-
-### Verificación de licencia (sistemas a2)
-1. Hacer clic en "Examinar..." para seleccionar la carpeta raíz de instalación
-2. La aplicación validará automáticamente a2admin.A2 y empresas.dat
-3. Se mostrará el estado de licencia y nombre de empresa
 
 ### Operaciones de mantenimiento
 1. Seleccionar tablas usando los checkboxes
