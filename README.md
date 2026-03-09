@@ -85,3 +85,40 @@ python ManteDBIsam.py
 - Los resultados detallados aparecen en la pestaña "Resultados de operaciones"
 - La barra de progreso muestra el avance de operaciones múltiples
 - El botón "Ver estado de conexión" muestra información técnica detallada
+
+## Dependencia: Driver ODBC DBISAM 4
+
+### Versión requerida
+
+**DBISAM ODBC Driver 4.29.1** (32 bits)
+
+### Descripción
+
+La aplicación requiere el driver ODBC de DBISAM versión 4 en su variante de **32 bits**, desarrollado por Elevate Software. Este driver está contenido en un único archivo DLL sin dependencias externas e incluye un asistente de configuración para crear y modificar orígenes de datos (DSN).
+
+### Características del driver
+
+- **Arquitectura**: 32 bits (obligatorio para compatibilidad con ManteDBIsam)
+- **Archivo principal**: DBODBC.DLL
+- **Versión mostrada en imágenes**: 4.29.00.01 (23/09/2009)
+- **Configuración**: Debe realizarse desde el administrador ODBC de 32 bits (`C:\Windows\SysWOW64\odbcad32.exe`)
+- **Sistemas operativos soportados**: Windows XP, Vista, 7, 8, 10 y 11
+
+### Descarga
+
+El driver puede obtenerse desde el sitio oficial de Elevate Software:
+
+🔗 **Página de descarga oficial**: [https://www.elevatesoft.com/products?category=dbisam&type=other](https://www.elevatesoft.com/products?category=dbisam&type=other)
+
+Elevate Software ofrece una **versión de prueba gratuita** que permite evaluar el producto antes de adquirir la licencia comercial.
+
+### Licencia
+
+El driver ODBC de DBISAM es un producto comercial de Elevate Software con un costo de **$529 USD** por licencia. Incluye distribución libre de regalías y soporte para entornos de desarrollo.
+
+### Nota importante sobre arquitectura
+
+En sistemas Windows de 64 bits, el driver de 32 bits debe configurarse **exclusivamente** utilizando el administrador ODBC de 32 bits:
+
+
+
