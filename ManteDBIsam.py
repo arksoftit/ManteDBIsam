@@ -115,7 +115,8 @@ class MantenimientoBDIsam:
         ttk.Entry(marco_conexion, textvariable=self.dsn_var, width=30).grid(row=0, column=1, padx=5)
         
         ttk.Label(marco_conexion, text="Usuario:").grid(row=1, column=0, sticky="w")
-        self.usuario_var = tk.StringVar(value="master")
+        # self.usuario_var = tk.StringVar(value="master")
+        self.usuario_var = tk.StringVar() 
         ttk.Entry(marco_conexion, textvariable=self.usuario_var).grid(row=1, column=1, padx=5)
         
         ttk.Label(marco_conexion, text="Contraseña:").grid(row=2, column=0, sticky="w")
