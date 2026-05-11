@@ -58,6 +58,7 @@ C:\Users\usuario\AppData\Local\Programs\Python\Python313-32\python -m venv venv_
 
 # Activar entorno
 venv_32\Scripts\activate
+source venv_32/Scripts/activate
 
 # Instalar dependencias
 pip install pyodbc pyinstaller
@@ -119,6 +120,76 @@ El driver ODBC de DBISAM es un producto comercial de Elevate Software con un cos
 ### Nota importante sobre arquitectura
 
 En sistemas Windows de 64 bits, el driver de 32 bits debe configurarse **exclusivamente** utilizando el administrador ODBC de 32 bits:
+
+# ArkToolsDBisam
+
+Herramienta de mantenimiento para bases de datos DBISam vía ODBC (32 bits)
+
+## Versión
+
+v0.1.9Beta - Mayo 2026
+
+## Descripción
+
+ArkToolsDBisam es una aplicación gráfica desarrollada en Python que permite realizar tareas de mantenimiento sobre bases de datos DBISam a través de conectores ODBC de 32 bits.
+
+## Novedades en v0.1.9Beta
+
+- Nuevo nombre: ArkToolsDBisam (antes ManteDBIsam)
+- Barra de progreso dual: general + detallada por tabla
+- Mensajes de éxito con resumen de operación
+- Etiquetas de detalle y porcentaje en la misma línea
+- 4 columnas para distribuir tablas disponibles
+- Logo corporativo integrado
+- Guardado automático de conexiones previas
+
+## Requisitos
+
+- Windows 10/11 (64 bits)
+- DBISAM ODBC Driver 4.29.1 (32 bits)
+- Python 3.x 32 bits
+
+## Instalación
+
+1. Clonar repositorio:
+   git clone https://github.com/arksoftit/ManteDBIsam.git
+   cd ManteDBIsam
+
+2. Crear entorno virtual con Python 32 bits:
+   "C:\Python\Python314_32\python" -m venv venv_32
+
+3. Activar entorno (Git Bash):
+   source venv_32/Scripts/activate
+
+4. Instalar dependencias:
+   pip install pyodbc pillow pyinstaller
+
+5. Ejecutar:
+   python ArkToolsDBisam.py
+
+## Compilación a .exe
+
+python -m PyInstaller --onefile --windowed --name ArkToolsDBisam --icon="assets/Imagen/Logo_Juepae_00_200.ico" --add-data "assets;assets" ArkToolsDBisam.py
+
+## Uso
+
+1. Conectar: Seleccionar DSN, usuario y contraseña
+2. Seleccionar tablas (checkboxes en 4 columnas)
+3. Elegir operación: Verificar, Reparar u Optimizar
+4. Ver resultados en pestaña "Resultados de operaciones"
+5. Ajuste de saldos en pestaña "Ajuste de Saldos"
+
+## Driver ODBC DBISAM 4
+
+- Versión requerida: 4.29.1 (32 bits)
+- Archivo: DBODBC.DLL
+- Configuración: odbcad32.exe desde C:\Windows\SysWOW64\
+- Descarga: https://www.elevatesoft.com/products?category=dbisam&type=other
+- Licencia: Comercial $529 USD
+
+## Licencia
+
+Desarrollado por JUEPAE. Todos los derechos reservados.
 
 
 
