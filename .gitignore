@@ -1,42 +1,21 @@
-# =========================
-# Entornos virtuales y cache
-# =========================
+# Entornos virtuales
 venv/
 env/
 .venv/
+venv_32/
+venv_64/
+
+# Cache de Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# =========================
-# Base de datos
-# =========================
-# Ignorar la base de datos si contiene datos sensibles o cambiantes
-
-
-
-# Pero: si deseas incluir una BD de ejemplo vacía, comenta la línea anterior
-# y crea un archivo como "ArkToolsBD_vacia.sqlite"
-
-# =========================
-# Metadatos de DBeaver (¡NO versionar!)
-# =========================
-.dbeaver/
-
-# =========================
-# Logs y archivos temporales
-# =========================
+# Logs
 logs/
 *.log
-*.tmp
-*.bak
-*.old
-*.orig
 
-# =========================
-# Backups manuales
-# =========================
+# Backups y respaldos
 backups/
 backupsdata/
 *.dbk
@@ -44,115 +23,34 @@ backupsdata/
 *.bbk
 *.backup
 
-
-
-# =========================
-# Archivos generados por PySide6
-# =========================
-# Si ui_*.py se genera automáticamente desde .ui, ignóralo
-ui_*.py
-
-# =========================
-# Configuración de editores
-# =========================
-# VS Code (ignorar configuraciones personales, no las compartidas)
-.vscode/settings.json
-.vscode/tasks.json
-.vscode/launch.json
-*.code-workspace
-
-# =========================
-# Sistema operativo
-# =========================
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# =========================
-# Otros
-# =========================
-Docs/
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-# =========================
-# Entornos virtuales y cache
-# =========================
-venv/
-env/
-.venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# =========================
-# Base de datos
-# =========================
-# Ignorar la base de datos si contiene datos sensibles o cambiantes
-
-
-
-# Pero: si deseas incluir una BD de ejemplo vacía, comenta la línea anterior
-# y crea un archivo como "ArkToolsBD_vacia.sqlite"
-
-# =========================
-# Metadatos de DBeaver (¡NO versionar!)
-# =========================
-.dbeaver/
-
-# =========================
-# Logs y archivos temporales
-# =========================
-logs/
-*.log
+# Archivos temporales
 *.tmp
 *.bak
 *.old
 *.orig
+*.swp
 
-# =========================
-# Backups manuales
-# =========================
-backups/
-backupsdata/
-*.dbk
-*.ibk
-*.bbk
-*.backup
+# Archivos generados por PyInstaller
+build/
+dist/
+*.spec
 
+# Base de datos (si contiene datos sensibles)
+*.sqlite
+*.db
 
-
-# =========================
-# Archivos generados por PySide6
-# =========================
-# Si ui_*.py se genera automáticamente desde .ui, ignóralo
-ui_*.py
-
-# =========================
 # Configuración de editores
-# =========================
-# VS Code (ignorar configuraciones personales, no las compartidas)
 .vscode/settings.json
 .vscode/tasks.json
 .vscode/launch.json
 *.code-workspace
 
-# =========================
 # Sistema operativo
-# =========================
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# =========================
 # Otros
-# =========================
 Docs/
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+.dbeaver/
+ui_*.py
